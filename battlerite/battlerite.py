@@ -28,7 +28,7 @@ class BattleriteAPI(object):
             query["filter[playerName]"] = names
         if playerid is not None:
             ids = playerid if type(playerid) != list else ','.join(playerid)
-            query["filter[playerids]"] = ids
+            query["filter[playerIds]"] = ids
 
         r = requests.get(BattleriteAPI.PLAYER_URL,
                          headers=self.header,
