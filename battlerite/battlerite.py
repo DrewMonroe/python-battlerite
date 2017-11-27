@@ -4,8 +4,6 @@ import requests
 class BattleriteAPI(object):
     MATCH_URL = "https://api.dc01.gamelockerapp.com/shards/global/matches"
     PLAYER_URL = "https://api.dc01.gamelockerapp.com/shards/global/players"
-    CASUAL_2V2 = "QUICK2V2"
-    CASUAL_3V3 = "QUICK3V3"
 
     def __init__(self, key):
         self.header = {
